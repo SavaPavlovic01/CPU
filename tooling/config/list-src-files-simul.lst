@@ -1,0 +1,5 @@
+src/synthesis/modules/cpu.v
+src/synthesis/modules/cpu_test.v
+src/synthesis/modules/alu.v
+src/synthesis/modules/register.v
+src/synthesis/modules/memory.v

@@ -1,0 +1,10 @@
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+C:\altera\13.1\modelsim_ase\win32aloem\vlog.exe -work work -l ./vlog_compile.log -override_timescale 1 ps / 1 ps ../src/synthesis/modules/cpu.v ../src/synthesis/modules/cpu_test.v ../src/synthesis/modules/alu.v ../src/synthesis/modules/register.v ../src/synthesis/modules/memory.v 
+-- Compiling module cpu
+-- Compiling module cpu_test
+-- Compiling module alu
+-- Compiling module register
+-- Compiling module memory
+
+Top level modules:
+	cpu_test

@@ -19,7 +19,7 @@ SIMUL_IS_QUESTA_USED = 0
 # C:\\"Program Files"\\altera\\13.1\\modelsim_ase\\win32aloem\\ 
 # C:\\"Program Files"\\questasim64_10.4c\\win64\\ 
 # C:\\Program1\\questasim64_10.7c\\win64\\ 
-SIMUL_TOOL_EXE_DIR_PATH = C:\\altera\\13.1\\modelsim_ase\\win32aloem\\
+SIMUL_TOOL_EXE_DIR_PATH = C:\\"Program Files"\\altera\\13.1\\modelsim_ase\\win32aloem\\ 
 
 # DE0_TOP (CycloneIII)
 # DE0_CV_TOP (CycloneV)
@@ -35,7 +35,7 @@ SYNTH_CYCLONE5_DEFAULT_ASSIGNMENT_FILE = ./config/boards/cyclone5/assignment_def
 SYNTH_CYCLONE5_CONSTRAINTS_FILE = ./config/boards/cyclone5/DE0_CV_TOP.sdc
 # either empty variable or path ending with \\ i.e. double backslash
 # C:\\"Program Files"\\altera\\13.1\\quartus\\bin\\ 
-SYNTH_TOOL_EXE_DIR_PATH = C:\\altera\\13.1\\quartus\\bin\\
+SYNTH_TOOL_EXE_DIR_PATH = C:\\"Program Files"\\altera\\13.1\\quartus\\bin\\
 
 LIST_FILE_ICARUS = ./config/list-icarus-verilog.lst
 LIST_FILE_SIMUL = ./config/list-src-files-simul.lst

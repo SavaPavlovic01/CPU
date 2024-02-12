@@ -1,19 +1,32 @@
-module clk_div #(parameter DIVISOR = 50000000)(clk,rst_n,out);
-    input clk; 
-    output reg out;
-    reg[27:0] counter=28'd0;
-    input rst_n;
+module clk_div #(
+    parameter DIVISOR = 50_000_000
+) (
+    input clk,
+    input rst_n,
+    output out
+);
+    reg out_reg, out_next;
+    assign out = out_reg;
+    integer timer_next, timer_reg;
 
-    always @(posedge clk,negedge rst_n) begin
-        if(!rst_n) begin
-            counter <= 0;
-            out <= 1'b0;
-        end else begin
-            counter <= counter + 28'd1;
-            if(counter>=(DIVISOR-1))
-                counter <= 28'd0;
-            out <= (counter<DIVISOR/2)?1'b1:1'b0; 
+    always @(posedge clk, negedge rst_n) begin
+        if (!rst_n) begin
+            out_reg <= 1'b0;
+            timer_reg <= 0;
+        end else
+        begin
+            out_reg <= out_next;
+            timer_reg = timer_next;
         end
-        
     end
+
+    always @(*) begin
+        out_next = out_reg;
+        timer_next = timer_reg;
+        if (timer_next == DIVISOR / 2) begin
+            out_next = ~out_reg;
+            timer_next = 0;
+        end else timer_next = timer_reg + 1;
+    end
+
 endmodule

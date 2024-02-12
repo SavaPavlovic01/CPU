@@ -1,4 +1,4 @@
-# C:/"program files"/"altera/13.1/quartus/bin/cygwin/bin/bash
+# C:/"Program Files"/altera/13.1/quartus/bin/cygwin/bin/bash
 # cd tooling
 # ./xpack/bin/make
 
